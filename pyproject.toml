@@ -11,4 +11,4 @@ Repository = "https://github.com/phyblas/nsfw-shorier_comfyui"
 [tool.comfy]
 PublisherId = "phyblas"
 DisplayName = "nsfw-shorier_comfyui"
-Icon = "https://github.com/phyblas/nsfw-shorier_comfyui/blob/main/img/nsfw-chan-icon.jpg"
+Icon = "https://raw.githubusercontent.com/phyblas/nsfw-shorier_comfyui/refs/heads/main/img/nsfw-chan-icon.jpg"
