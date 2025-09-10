@@ -1,0 +1,15 @@
+[project]
+name = "nsfw-shorier_comfyui"
+description = "Detect and handle NSFW images. Supports multiple models."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["transformers", "pillow"]
+
+[project.urls]
+Repository = "https://github.com/phyblas/nsfw-shorier_comfyui"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "phyblas"
+DisplayName = "nsfw-shorier_comfyui"
+Icon = ""
