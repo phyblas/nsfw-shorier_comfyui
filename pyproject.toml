@@ -1,7 +1,7 @@
 [project]
 name = "nsfw-shorier_comfyui"
 description = "Performs various processing on images containing NSFW content within ComfyUI. The model used for detecting NSFW content can be selected."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 dependencies = ["transformers", "pillow"]
 

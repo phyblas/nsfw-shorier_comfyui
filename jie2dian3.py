@@ -271,11 +271,8 @@ class IsNsfw(GetNsfwScore):
     FUNCTION = 'is_nsfw'
     
     def is_nsfw(self, image, model_name, threshold):
-        if threshold == 1:
-            return [False] * len(image)
-        
         score = self.get_score(image, model_name)[0]
-        return (list(np.array(score) > threshold), score)
+        return ([s > threshold for s in score], score)
 
 class ReplaceIfNsfw(IsNsfw):
     '''NSFW内容替换 - 使用替代图像替换被判定为NSFW的图像'''
@@ -456,8 +453,12 @@ class SaveImageSfw(IsNsfw):
     CATEGORY = 'image'
     
     def save_sfw(self, image, filename_prefix, file_type, no_metadata, nsfw_detector_model, threshold, prompt=None, extra_pnginfo=None):
+        if threshold == 1:
+            is_nsfw = [False] * len(image)
+        else:
+            is_nsfw, _ = self.is_nsfw(image, nsfw_detector_model, threshold)
+        
         # 改编自: https://github.com/Goktug/comfyui-saveimage-plus/blob/main/save_image.py
-        is_nsfw, _ = self.is_nsfw(image, nsfw_detector_model, threshold)
         output_dir = folder_paths.get_output_directory()
         full_output_folder, filename, counter, subfolder, _ = folder_paths.get_save_image_path(filename_prefix, output_dir, image[0].shape[1], image[0].shape[0])
 
