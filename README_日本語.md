@@ -12,6 +12,7 @@ NSFWコンテンツを判定するために以下のモデルから選択でき�
 - [compvis](https://huggingface.co/CompVis/stable-diffusion-safety-checker)
 - [falconsai](https://huggingface.co/Falconsai/nsfw_image_detection)
 - [adamcodd](https://huggingface.co/AdamCodd/vit-base-nsfw-detector)
+- [umairrkhn](https://huggingface.co/umairrkhn/fine-tuned-nsfw-classification)
 
 compvisはデフォルトモデルで、経験上最も正確な結果を提供します。ただし、他のモデルも試して、自分に最適なものを選んでください。
 

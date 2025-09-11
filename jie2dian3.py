@@ -147,11 +147,17 @@ class AdamcoddDetector(FalconsaiDetector):
     def __init__(self):
         self.model = pipeline('image-classification', model='AdamCodd/vit-base-nsfw-detector')
 
+class UmairrkhnDetector(FalconsaiDetector):
+    '''umairrkhn NSFW检测模型'''
+    def __init__(self):
+        self.model = pipeline('image-classification', model='umairrkhn/fine-tuned-nsfw-classification')
+
 # 模型名称映射字典
 model_name_dic = {
     'compvis': CompvisDetector,
-    'falconsai': FalconsaiDetector, 
+    'falconsai': FalconsaiDetector,
     'adamcodd': AdamcoddDetector,
+    'umairrkhn': UmairrkhnDetector,
 }
 model_name_lis = list(model_name_dic)
 model_dic = {}

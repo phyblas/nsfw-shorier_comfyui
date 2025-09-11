@@ -14,6 +14,7 @@
 - [compvis](https://huggingface.co/CompVis/stable-diffusion-safety-checker)
 - [falconsai](https://huggingface.co/Falconsai/nsfw_image_detection)
 - [adamcodd](https://huggingface.co/AdamCodd/vit-base-nsfw-detector)
+- [umairrkhn](https://huggingface.co/umairrkhn/fine-tuned-nsfw-classification)
 
 compvis 是默认模型，根据我的经验，它能提供最准确的结果。但也可以尝试其他模型，请选择自己认为效果最好的一个。
 
