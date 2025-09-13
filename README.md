@@ -10,7 +10,7 @@
 
 ## 安装
 
-将此仓库放置在 ComfyUI 的 `ComfyUI/custom_nodes/` 文件夹中即可使用。但也可以通过 [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) 进行安装。
+将此仓库放置在 ComfyUI 的 `ComfyUI/custom_nodes/` 文件夹中即可使用。也可以通过 [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) 进行安装。
 
 ## 支持的模型
 
