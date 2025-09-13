@@ -1,9 +1,9 @@
 [project]
 name = "nsfw-shorier_comfyui"
-description = "Performs various processing on images containing NSFW content within ComfyUI. The model used for detecting NSFW content can be selected."
-version = "1.1.0"
+description = "Performs various processing on images containing NSFW content within ComfyUI. The model used for detecting NSFW content can be selected: [compvis, falconsai, adamcodd, umairrkhn, nudenet]"
+version = "1.2.0"
 license = {file = "LICENSE"}
-dependencies = ["transformers", "pillow"]
+dependencies = ["transformers", "pillow", "onnxruntime"]
 
 [project.urls]
 Repository = "https://github.com/phyblas/nsfw-shorier_comfyui"
