@@ -15,6 +15,8 @@ NSFWコンテンツを検出するために以下のモデルから選択でき�
 - [falconsai](https://huggingface.co/Falconsai/nsfw_image_detection)
 - [adamcodd](https://huggingface.co/AdamCodd/vit-base-nsfw-detector)
 - [umairrkhn](https://huggingface.co/umairrkhn/fine-tuned-nsfw-classification)
+- [marqo](https://huggingface.co/Marqo/nsfw-image-detection-384)
+- [gantman](https://github.com/GantMan/nsfw_model)
 - [nudenet](https://github.com/notAI-tech/NudeNet)
 
 compvisはデフォルトモデルで、実際のテストでは最も正確な検出結果を提供します。他のモデルも試して、ニーズに最適なバージョンを選択してください。

@@ -19,6 +19,8 @@
 - [falconsai](https://huggingface.co/Falconsai/nsfw_image_detection)
 - [adamcodd](https://huggingface.co/AdamCodd/vit-base-nsfw-detector)
 - [umairrkhn](https://huggingface.co/umairrkhn/fine-tuned-nsfw-classification)
+- [marqo](https://huggingface.co/Marqo/nsfw-image-detection-384)
+- [gantman](https://github.com/GantMan/nsfw_model)
 - [nudenet](https://github.com/notAI-tech/NudeNet)
 
 compvis 是默认模型，根据实际测试，它能提供最准确的检测结果。也可以尝试其他模型，选择自己认为效果最好的一个。

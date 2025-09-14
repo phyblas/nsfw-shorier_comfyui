@@ -1,9 +1,11 @@
-import os, shutil
+import os
+
 import requests
 import torch
 from torch import nn
 from transformers import CLIPImageProcessor, CLIPConfig, CLIPVisionModel, PreTrainedModel
-from tqdm import tqdm
+
+from .shori import download_model
 
 # 优先使用GPU进行处理
 if torch.cuda.is_available():
@@ -30,21 +32,8 @@ def download_compvis_model():
     model_file = os.path.join(compvis_model_dir, 'model.safetensors')
     model_url = root_url + 'model.safetensors'
     
-    try:
-        temp_file = model_file + '.download'
-        with requests.get(model_url, stream=True) as response:
-            text = '正在下载CompVis模型'
-            total = int(response.headers.get('content-length', 0))
-            pbar = tqdm(None, total=total, unit='b', unit_scale=True, desc=text)
-            with open(temp_file, 'wb') as f:
-                # 分块下载大文件
-                for chunk in response.iter_content(chunk_size=8192):
-                    f.write(chunk)
-                    pbar.update(len(chunk))
-            pbar.close()
-        shutil.move(temp_file, model_file)
-    except Exception as e:
-        raise RuntimeError(f'CompVis模型下载失败: {e}') from e
+    download_model(model_url, model_file, 'CompVis')
+    
     
     # 下载配置文件
     for config_json in ['config.json', 'preprocessor_config.json']:

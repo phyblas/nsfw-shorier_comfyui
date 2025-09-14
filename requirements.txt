@@ -1,5 +1,6 @@
 onnxruntime
 pillow
+timm
 torch
 torchvision
 tqdm
