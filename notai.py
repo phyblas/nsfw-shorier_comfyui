@@ -169,7 +169,7 @@ class NudenetDetector:
         score = []
         for detection_i in detection:
             # 找分数最高的元素，只使用这个分数。如果没找到任何元素则返回0
-            max_score = 0
+            max_score = 0.
             for detection_ii in detection_i:
                 if detection_ii['label'] in nudenet_nsfw_label_lis:
                     if detection_ii['score'] > max_score:

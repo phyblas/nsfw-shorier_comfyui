@@ -3,7 +3,7 @@
 # nsfw-shorier_comfyui
 
 （→ [English Description](https://github-com.translate.goog/phyblas/nsfw-shorier_comfyui/blob/master/README.md?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)）
-（→ [日本語解説](README_日本語.md)）
+（→ [日本語解説はQiitaで](https://qiita.com/phyblas/items/02b0544c32f32efd8f74)）
 （→ [อ่านภาษาไทย](README_ภาษาไทย.md)）
 
 这个扩展包用于在 ComfyUI 中处理包含 NSFW（Not Safe For Work，不适宜在工作场所观看）内容的图片。其名称来源于日语中的"処理"（shori，意为"处理"）。
